@@ -1,6 +1,4 @@
-# README
-
-* Planning my application
+# Planning my application
   
   1. Questions?
     - What are we building?
@@ -58,4 +56,3 @@
   -contact
 
 
-  
