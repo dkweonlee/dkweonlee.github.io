@@ -1,24 +1,61 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Planning my application
+  
+  1. Questions?
+    - What are we building?
+    - Who are we building it for?
+    - What features do we need to have?
 
-Things you may want to cover:
+  2. User Stories
 
-* Ruby version
+  3. Model/Data
 
-* System dependencies
+  4. Think through View Pages
 
-* Configuration
+* Answers!
+  
+  1. I'm building a personal blog. A place where I can blog, share exmples of my work, and have people contact us.
 
-* Database creation
+  2. I'm building it for myself, and also the community. Sharing what I learning by blogging is a great way to learn. 
 
-* Database initialization
+  3. Features are:
+    - Posts
+      - CRUD (Create, Read, Update, Destory)
+      - Markdwon
+      - Syntax highlighting
+      - Comments w/Disqus
 
-* How to run the test suite
+    - Projects
+      - CRUD
 
-* Services (job queues, cache servers, search engines, etc.)
+    - Contact
+      - Contact form
+      - Sendgrid
 
-* Deployment instructions
+    - User w/ Devise
 
-* ...
+* Modeling Data
+
+  -Posts
+    title:string
+    content:string
+
+  -Projects
+    title:string
+    description:text
+    link:string
+
+  -Users
+
+* View Pages
+  
+  -home
+  -posts#index
+  -post#show
+  -projects#index
+  -projects#show
+  -contact
+
+
+  
