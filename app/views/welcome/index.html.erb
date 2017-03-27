@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>A software engineer is a person who applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of the software.</p> 
+
+    <p>systems that make computers or anything containing software work. <a href="#">LINK</a></p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Articles</h2>
+    <hr>
+    <% @posts.each do |post| %>
+    <h3><a href="#"><%= link_to post.title, post %></a></h3>
+    <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Projects</h2>
+    <hr>
+    <h3><a href="#">Title</a></h3>
+    <p class="date">Friday March 23th</p>
+    <h3><a href="#">Title</a></h3>
+    <p class="date">Friday March 23th</p>
+    <h3><a href="#">Title</a></h3>
+    <p class="date">Friday March 23th</p>
+    </div>
+</div>
