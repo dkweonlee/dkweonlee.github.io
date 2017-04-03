@@ -2554,3 +2554,14 @@ Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.7ms)
 
 
   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started GET "/projects/test-project" for ::1 at 2017-04-03 14:13:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"test-project"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."slug" = $1 LIMIT $2[0m  [["slug", "test-project"], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_disqus.html.erb (6.3ms)
+  Rendered projects/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 261ms (Views: 229.4ms | ActiveRecord: 3.9ms)
+
+
