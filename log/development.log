@@ -1594,3 +1594,36 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 311ms (Views: 305.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/posts" for ::1 at 2017-04-02 21:35:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  Rendered posts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 226ms (Views: 203.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-02 21:35:54 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-02 21:36:09 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-02 21:36:46 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at desc[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
