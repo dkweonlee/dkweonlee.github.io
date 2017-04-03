@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pygments.rb'
 gem 'redcarpet'
+gem 'friendly_id'
 
 
 # Use Capistrano for deployment

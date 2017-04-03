@@ -1533,3 +1533,64 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 312ms (Views: 306.2ms | ActiveRecord: 0.7ms)
 
 
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFriendlyIdSlugs (20170403021048)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateFriendlyIdSlugs < ActiveRecord::Migration[4.2] (called from load at /Users/danielkweon-lee/.rbenv/versions/2.4.0/bin/rake:22)
+  [1m[35m (24.7ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" serial primary key, "slug" character varying NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" character varying(50), "scope" character varying, "created_at" timestamp)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs"  ("sluggable_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs"  ("slug", "sluggable_type")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs"  ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs"  ("sluggable_type")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170403021048"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSlugToPosts (20170403021137)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "slug" character varying[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_posts_on_slug" ON "posts"  ("slug")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170403021137"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 2) AND "posts"."slug" = $1 LIMIT $2[0m  [["slug", "test-post"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "slug" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["slug", "test-post"], ["updated_at", 2017-04-03 02:14:40 UTC], ["id", 2]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 3) AND "posts"."slug" = $1 LIMIT $2[0m  [["slug", "second-post-testing"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "posts" SET "slug" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["slug", "second-post-testing"], ["updated_at", 2017-04-03 02:14:40 UTC], ["id", 3]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 4) AND "posts"."slug" = $1 LIMIT $2[0m  [["slug", "last-test"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "slug" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["slug", "last-test"], ["updated_at", 2017-04-03 02:14:40 UTC], ["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 5) AND "posts"."slug" = $1 LIMIT $2[0m  [["slug", "you-shouldn-t-see-me"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "slug" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["slug", "you-shouldn-t-see-me"], ["updated_at", 2017-04-03 02:14:40 UTC], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2017-04-02 21:15:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 220ms (Views: 199.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/posts/you-shouldn-t-see-me" for ::1 at 2017-04-02 21:15:11 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"you-shouldn-t-see-me"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "you-shouldn-t-see-me"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (287.3ms)
+Completed 200 OK in 311ms (Views: 305.4ms | ActiveRecord: 0.5ms)
+
+
