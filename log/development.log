@@ -1692,3 +1692,52 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 40ms (Views: 26.4ms | ActiveRecord: 5.0ms)
 
 
+Started GET "/posts?page=1" for ::1 at 2017-04-02 21:46:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"posts"} missing required keys: [:id]):
+    4:   <% @posts.each do |post| %>
+    5:     <div class="post">
+    6:       <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    7:       <h2><a href="#"><%= link_to post.title, post_path %></a></h2>
+    8:       <hr>
+    9:     </div>
+   10:   <% end %>
+  
+app/views/posts/index.html.erb:7:in `block in _app_views_posts_index_html_erb__4347524261256002705_70313071558220'
+app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb__4347524261256002705_70313071558220'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.3ms)
+Started GET "/posts?page=1" for ::1 at 2017-04-02 21:46:57 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 211ms (Views: 208.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/you-shouldn-t-see-me" for ::1 at 2017-04-02 21:46:59 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"you-shouldn-t-see-me"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "you-shouldn-t-see-me"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (268.7ms)
+Completed 200 OK in 294ms (Views: 288.1ms | ActiveRecord: 0.9ms)
+
+
