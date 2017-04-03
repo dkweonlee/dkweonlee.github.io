@@ -20,6 +20,21 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
+
+  def update
+    if @project.update project_params
+      redirect_to @project, notice: "Dan, you successfully updated the project!"
+    else
+      render 'edit'
+    end
+  end
   private
   def find_project
     @project = Project.friendly.find(params[:id])
