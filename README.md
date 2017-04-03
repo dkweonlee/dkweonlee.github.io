@@ -54,5 +54,8 @@
   -projects#index
   -projects#show
   -contact
+  
+  ##Code Status
+  https://app.codeship.com/projects/70154810-faa5-0134-e496-2a39d41c20b3/status?branch=master
 
 
