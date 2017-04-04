@@ -3240,3 +3240,622 @@ Processing by ContactsController#index as HTML
 Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-04-04 10:55:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (6.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 283ms (Views: 231.4ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/contact.html" for ::1 at 2017-04-04 10:55:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (5.4ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.2ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.7ms)
+Started GET "/contact.html" for ::1 at 2017-04-04 11:00:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (5.3ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.0ms)
+Started GET "/" for ::1 at 2017-04-04 11:01:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `contact_path' for #<#<Class:0x007fe33019fad0>:0x007fe336e6f250>
+Did you mean?  contacts_path):
+    17:       <nav>
+    18:         <%= link_to "Articles", posts_path %>
+    19:         <%= link_to "Projects", projects_path %>
+    20:          <%= link_to "Contact", contact_path %>
+    21:     </header>
+    22: 
+    23:     <%= yield %>
+  
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___3511634069640673542_70306927689060'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.2ms)
+Started GET "/" for ::1 at 2017-04-04 11:01:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 11:01:23 -0500
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  Rendered contacts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 11:01:50 -0500
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  Rendered contacts/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_contacts_path' for #<#<Class:0x007fe338230898>:0x007fe3380b8dd0>
+Did you mean?  new_contact_path
+               new_contact_url):
+    17:       <nav>
+    18:         <%= link_to "Articles", posts_path %>
+    19:         <%= link_to "Projects", projects_path %>
+    20:          <%= link_to "Contact", new_contacts_path %>
+    21:     </header>
+    22: 
+    23:     <%= yield %>
+  
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___3511634069640673542_70306937260880'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.1ms)
+Started GET "/" for ::1 at 2017-04-04 11:02:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 11:02:14 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 48ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 11:02:27 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oihARGeVMaJ079ox8+cwk+Rq4lVuTTA8X0c20mz6Cid5gquPbJsyoOB6kPZqY+WHL/xKS+JEs52jwYnPpUP35w==", "contact"=>{"name"=>"hi", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 11:04:18 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmwx3BH/LKhZ7Xo9PaecMVQN0Zi69iqYY4RFKe3dOorZRDZia9pY6YX78UHYR7Y8+KlAss/rRlH0v9MU6NPKg==", "contact"=>{"name"=>"hi", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 11:13:59 -0500
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  Rendered contacts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-04 11:14:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 45ms (Views: 29.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 11:14:29 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 11:14:37 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WQRlTW8yQvhUYIU5+C+E27gaMOgIYyq+AECIFTQn36GCro6GZDxB+sD1z/5hq1HPc4yY9oRqqR/8xjcI/Z4iYQ==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"i", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 11:20:49 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tUf0CRfsFatpmC6rbHkl9kYrLbzprUUh/4tECgDysf4YW1QX7gSAem7odIaf7qVecJm/+EB5MJLZ16pS9OaKPg==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"i", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 11:20:54 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 12:48:33 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3zU2WNznIuEVTJkIu25usBpCXL7DHYNFhvc1QPNC0FpyKZZGJQ+3MBI8wyVI+e4YLPDO+mrJ9vagq9sYB1brmg==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hello", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 12:49:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (4.9ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.6ms)
+Started GET "/contacts/new" for ::1 at 2017-04-04 12:49:36 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 12:56:01 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lGmy9yxOpONWTEUgauZ8DxoF+rVYCw2GrPqA2iLwjXQ5dRLp1aYxMlE8Hw2ZcfynLLdo8fHfeDWKpm6C1uS2tA==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"hjkwon242@gmail.com", "message"=>"212", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 13:08:02 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYNXCrfJRTa5APWs1Mcxp7Y6nFISAhGiG+4MGfNVek/0n/cUTiHQ575wr4EnULEPgIgOFrvWZBE9suJBB0FBjw==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"hjkwon242@gmail.com", "message"=>"212", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 13:22:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (4.8ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.9ms)
+Started GET "/contacts/new" for ::1 at 2017-04-04 13:22:08 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 13:22:18 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ds33pnmSm6uFqfbX9Yi1CR4iAnTWLOOd8b0v1h6uw2+j0Ve4gHoOeoLZrPoGHzWhKJCQMH/4li7X4cGO6rr4rw==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 13:23:40 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 13:31:46 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_normalize.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_welcome.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_posts_projects.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/pygments.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_normalize.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_welcome.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_posts_projects.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/pygments.css.scss to /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/assets/stylesheets/pygments.scss. (called from _app_views_layouts_application_html_erb___3511634069640673542_70306941129120 at /Users/danielkweon-lee/Desktop/dkweonlee.github.io/app/views/layouts/application.html.erb:10)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-04 13:32:19 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 47ms (Views: 31.5ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-04 13:34:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 53ms (Views: 29.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-04 13:34:39 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-04 13:34:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 13:34:45 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 13:37:05 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HCehZTa67cLPBoezWQqgfjTblZ1963xO2mHGO7cOAMrHjUquPbTuwFuTzXTAjnVq/009g/Hi/+8m53kmfrf9Cg==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2017-04-04 13:41:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (5.1ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.2ms)
+Started GET "/contacts/new" for ::1 at 2017-04-04 13:41:18 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 13:41:25 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h23S9abcLUDryFzEIvqQSRnPodUJYZsOZKgGrbkfil8qcXLrXzS4key4BunRbRDhL30zkaC17r1C9Oj1TQuxnw==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+No template found for ContactsController#create, rendering head :no_content
+Completed 204 No Content in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 14:26:56 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 14:27:02 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dh94a1Wyj12sK2iV+tk80mTkPLAC4T8VG/YLaDAE/FHbA9h1rFoajKtbMrgJTrx6Ulau9Ks1SqY9quUwxBDHkQ==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 14:55:42 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 15:02:52 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wkFTo4SP72FeNRZJuVOWl1mWE21eV+1HoxZE3yKiGedvXfO9fWd6sFlFTGRKxBY/bySBKfeDmPSFSqqH1rYiJw==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"i", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 15:03:54 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 15:04:05 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EM2/miHUYY+MWa3uoa0k/4jS87+2YEnYHddHa7rfzEa90R+E2Dz0Xosp98NSOqRXvmBh+x+0PGs7i6kzTsv3hg==", "contact"=>{"name"=>"hi", "email"=>"dkweonlee@gmail.com", "message"=>"i", "nickname"=>""}, "commit"=>"Send Message"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x007fe3323d79e0>
+Did you mean?  try):
+  
+app/controllers/contacts_controller.rb:9:in `create'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+Started GET "/contacts/new" for ::1 at 2017-04-04 15:04:32 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 15:04:41 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LsA9EcVfXvwzSYOyzTjCrJQBbVsu+wFJd0uCUuMu9y2D3J0PPLfLLTQ52Z8+r0IEorP/H4cvdPpRF2wKFzrM7Q==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"i", "nickname"=>""}, "commit"=>"Send Message"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x007fe330e434f8>
+Did you mean?  try):
+  
+app/controllers/contacts_controller.rb:9:in `create'
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.9ms)
+Started GET "/contacts/new" for ::1 at 2017-04-04 15:04:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 239ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 15:05:11 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kn5VlwxhY91mQFz0msQ/dNu40EZGO4RJNoBdLIhkRjM/YvWJ9Yn2DGEwBtlpU7/c7QpCAu/v8foQ3LN0fHB98w==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+Completed   in 102131ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 15:08:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 227ms (Views: 211.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 15:08:16 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ylil7spcHTLY8spOFqVtECxaBEP+lYn05o+a73jGUxpnRAXwM7SI49+CkGPlMu24GuiWB1dB/EfA03S3jNJo2g==", "contact"=>{"name"=>"Daniel Kweon-lee", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (1.1ms)
+MailForm::Notifier#contact: processed outbound mail in 232.9ms
+Sent mail to dkweonlee@gmail.com (11.0ms)
+Date: Tue, 04 Apr 2017 15:08:36 -0500
+From: Daniel Kweon-lee <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e3fd44de71d_971f3fd9924560e08128a@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel Kweon-lee</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  hi</p>
+
+
+Completed   in 880279ms (ActiveRecord: 0.0ms)
+
+
