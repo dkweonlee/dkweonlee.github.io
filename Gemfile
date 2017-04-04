@@ -35,6 +35,7 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'friendly_id'
 gem 'will_paginate', '~> 3.1.0'
+gem 'mail_form'
 
 
 # Use Capistrano for deployment
