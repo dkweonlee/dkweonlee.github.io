@@ -36,6 +36,7 @@ gem 'redcarpet'
 gem 'friendly_id'
 gem 'will_paginate', '~> 3.1.0'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'devise', '~> 4.2'
 
 
 # Use Capistrano for deployment
