@@ -3961,3 +3961,241 @@ Processing by ContactsController#create as HTML
 Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/contacts/new" for ::1 at 2017-04-04 17:46:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 215ms (Views: 200.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 17:46:16 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TJ2YS0QuQumYIIWesNvKarx5puh2S7tnGwX2oj+OBtLhgThVvcbXOJ9Q37NDTErCiss0rN+fztQ9WRj6y5o9Eg==", "contact"=>{"name"=>"daniel", "email"=>"dkweonlee@gmail.com", "message"=>"hi", "nickname"=>""}, "commit"=>"Send Message"}
+Completed   in 464033ms (ActiveRecord: 0.0ms)
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (10.0ms)
+MailForm::Notifier#contact: processed outbound mail in 180.0ms
+Sent mail to dkweonlee@gmail.com (18.8ms)
+Date: Tue, 04 Apr 2017 18:02:23 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e425ff4fa86_aa733fc424c3e53827874@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  cool!</p>
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (6.6ms)
+MailForm::Notifier#contact: processed outbound mail in 145.7ms
+Sent mail to dkweonlee@gmail.com (359.8ms)
+Date: Tue, 04 Apr 2017 18:08:40 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e4277869366_ac563ffb1083e52889427@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  cool</p>
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (8.6ms)
+MailForm::Notifier#contact: processed outbound mail in 206.7ms
+Sent mail to dkweonlee@gmail.com (297.0ms)
+Date: Tue, 04 Apr 2017 18:27:07 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e42bcb5b935_aef23ff05042e5488797d@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  Cool!</p>
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (9.3ms)
+MailForm::Notifier#contact: processed outbound mail in 239.4ms
+Sent mail to dkweonlee@gmail.com (1317.9ms)
+Date: Tue, 04 Apr 2017 18:46:06 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e4303edadac_b14e3fd47501053443680@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  Hi!</p>
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (15.1ms)
+MailForm::Notifier#contact: processed outbound mail in 281.6ms
+Sent mail to dkweonlee@gmail.com (337.3ms)
+Date: Tue, 04 Apr 2017 19:04:23 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e434873a14_b3b13fda5f43e5303632c@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  Hi!</p>
+
+
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (6.8ms)
+MailForm::Notifier#contact: processed outbound mail in 215.2ms
+Sent mail to dkweonlee@gmail.com (609.5ms)
+Date: Tue, 04 Apr 2017 19:06:51 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e4351b16386_b4223fd4d0c10518832a1@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  Hi!</p>
+
+
+Started GET "/" for ::1 at 2017-04-04 19:13:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 270ms (Views: 239.5ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-04 19:13:15 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2017-04-04 19:13:35 -0500
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhBjEnBLVbLsGnXYbImalzC19ybFy7TYSgxLKfTTc7C9uojZe0VWsHiPPx/1DU+D+yNfOEnCN3m2ivQ0PWqOcA==", "contact"=>{"name"=>"Daniel", "email"=>"dkweonlee@gmail.com", "message"=>"Hi again, I hope this get to you!!", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /Users/danielkweon-lee/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/mail_form-1.6.0/lib/mail_form/views/mail_form/contact.erb (1.9ms)
+MailForm::Notifier#contact: processed outbound mail in 179.1ms
+Sent mail to dkweonlee@gmail.com (654.6ms)
+Date: Tue, 04 Apr 2017 19:14:04 -0500
+From: Daniel <dkweonlee@gmail.com>
+To: dkweonlee@gmail.com
+Message-ID: <58e436cce5b6a_b4c63fcc3af08f70816c4@Daniels-MacBook-Pro-2.local.mail>
+Subject: Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Daniel</p>
+
+  <p><b>Email:</b>
+  dkweonlee@gmail.com</p>
+
+  <p><b>Message:</b>
+  Hi again, I hope this get to you!!</p>
+
+
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30609ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-04 19:16:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 244ms (Views: 222.5ms | ActiveRecord: 5.6ms)
+
+
