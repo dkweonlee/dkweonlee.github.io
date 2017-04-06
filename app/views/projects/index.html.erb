@@ -1,4 +1,7 @@
-<h1 id="page_title">Projects</h1>
+<h1 id="page_title">Projects<br>
+<% if user_signed_in? %>
+  <%= link_to "Create", new_project_path %>
+<% end %></h1>
 
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @projects.each do |project| %>

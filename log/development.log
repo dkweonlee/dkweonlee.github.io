@@ -4666,3 +4666,409 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 32ms (Views: 23.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2017-04-06 06:41:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (25.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (27.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (17.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 343ms (Views: 254.9ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/posts/test-post" for ::1 at 2017-04-06 06:41:41 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-post"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "test-post"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 44ms (Views: 35.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 06:41:44 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 68ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/second-post-testing" for ::1 at 2017-04-06 06:41:46 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"second-post-testing"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "second-post-testing"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (1.6ms)
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 06:41:51 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/last-test" for ::1 at 2017-04-06 06:41:52 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"last-test"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "last-test"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 06:41:57 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-06 07:09:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 07:09:31 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/test-post" for ::1 at 2017-04-06 07:09:33 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-post"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "test-post"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/test-post" for ::1 at 2017-04-06 07:10:13 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-post"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1 LIMIT $2[0m  [["slug", "test-post"], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-06 07:11:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-06 08:12:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:12:14 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-06 08:12:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 67ms (Views: 53.5ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-06 08:12:37 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7lToypTeja0guF0GDanB+kH2tOn/+3MG4sNTCsOWgUyWZBMQ/4DCOfeFP7iRKWEh/3YDJAOj1hyFjzoouTC4g==", "user"=>{"email"=>"dkweonlee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (24.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dkweonlee@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 178ms (ActiveRecord: 24.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7lToypTeja0guF0GDanB+kH2tOn/+3MG4sNTCsOWgUyWZBMQ/4DCOfeFP7iRKWEh/3YDJAOj1hyFjzoouTC4g==", "user"=>{"email"=>"dkweonlee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 151ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-06 08:12:42 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DrYuSHn5/3HfiyI00pSm69Cnds7yv5kEKRaxbRevtDNzVu2nEFSGT4zX174o5qRovl10EcVO+5BAi4DJnkUs1A==", "user"=>{"email"=>"dkweonlee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dkweonlee@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 130ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DrYuSHn5/3HfiyI00pSm69Cnds7yv5kEKRaxbRevtDNzVu2nEFSGT4zX174o5qRovl10EcVO+5BAi4DJnkUs1A==", "user"=>{"email"=>"dkweonlee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 147ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-06 08:12:50 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3WhGvRPq4WJ89GT8gjU6hXnx+ht5pL5lK2LLNkALTvugiIVSekeYXC+okXZ4RzgGFwv4xE5V3PFC//qSyeHWHA==", "user"=>{"email"=>"dkweonlee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dkweonlee@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-06 13:12:50 UTC], ["last_sign_in_at", 2017-04-05 01:29:46 UTC], ["sign_in_count", 3], ["updated_at", 2017-04-06 13:12:50 UTC], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-06 08:12:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:12:53 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:13:19 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:13:35 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:13:52 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:14:11 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:14:52 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:14:58 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:14:59 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:15:01 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:15:14 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-06 08:15:16 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (3.8ms)
+  Rendered posts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:15:21 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:15:38 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-04-06 08:15:40 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.5ms)
+  Rendered projects/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 41ms (Views: 30.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:15:45 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-04-06 08:15:46 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.0ms)
+  Rendered projects/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 50ms (Views: 40.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:15:47 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-04-06 08:15:49 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts/new" for ::1 at 2017-04-06 08:16:01 -0500
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:16:03 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:16:04 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-06 08:16:05 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Bit+Q4ZRlfaxAvD+01XwRE3vnNQ7QwvCRlGDPvRkO/Q0E8+vC/Xbq+BRN4W/W4AwvYEg2Vc53urtUK6kLWxRQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-06 08:16:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-06 08:16:07 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-06 08:16:08 -0500
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY created_at desc[0m
+  Rendered projects/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
