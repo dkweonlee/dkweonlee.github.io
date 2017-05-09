@@ -13,7 +13,7 @@
 
 * Answers!
   
-  1. I'm building a personal blog. A place where I can blog, share exmples of my work, and have people contact us.
+  1. I'm building a personal blog. A place where I can blog, share examples of my work, and have people contact us.
 
   2. I'm building it for myself, and also the community. Sharing what I learning by blogging is a great way to learn. 
 
