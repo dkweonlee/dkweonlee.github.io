@@ -1,3 +1,6 @@
+# Code Build
+[ ![Codeship Status for dkweonlee/dkweonlee.github.io](https://app.codeship.com/projects/70154810-faa5-0134-e496-2a39d41c20b3/status?branch=master)](https://app.codeship.com/projects/211294)
+
 # Planning my application
   
   1. Questions?
@@ -54,7 +57,4 @@
   -projects#index
   -projects#show
   -contact
-  
-# Code Build
-[ ![Codeship Status for dkweonlee/dkweonlee.github.io](https://app.codeship.com/projects/70154810-faa5-0134-e496-2a39d41c20b3/status?branch=master)](https://app.codeship.com/projects/211294)
 
